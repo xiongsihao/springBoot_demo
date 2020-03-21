@@ -1,0 +1,9 @@
+server:
+  port: 80
+
+#此处需修改配置
+qq:
+  oauth:
+    backUrl: http://xiongsihao.com/qq/callback
+  appid: 101860754
+  appkey: 5722cf6aef6780e821255c17dd498daa

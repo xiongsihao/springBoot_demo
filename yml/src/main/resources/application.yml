@@ -1,0 +1,35 @@
+#基本数据类型 key: value
+#@Value("${name}")注解获取值
+name: xsh
+
+#对象数据类型(map)
+#@Value("${person.age}") 获取值18
+person:
+  name: xsh
+  age: 18
+#person: {name: xsh,age: 18}
+
+
+#配置数组（List、Set）数据
+#@Value("${city[1]}") 获取值tianjin
+city:
+  - beijing
+  - tianjin
+  - shanghai
+  - chongqing
+#city: [beijing,tianjin,shanghai,chongqing]
+
+
+#集合中的元素也是对象形式
+#@Value("${student[1].score}") 获取值88
+#student:
+#  - name: zhangsan
+#    age: 18
+#    score: 100
+#  - name: lisi
+#    age: 28
+#    score: 88
+#  - name: wangwu
+#    age: 38
+#    score: 90
+student: [{name: zhangsan,age: 18,score: 100},{name: lisi,age: 28,score: 88},{name: wangwu,age: 38,score: 90}]

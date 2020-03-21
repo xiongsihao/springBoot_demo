@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/QQ_Login/QQ_Login.iml" filepath="$PROJECT_DIR$/QQ_Login/QQ_Login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileUpload/fileUpload.iml" filepath="$PROJECT_DIR$/fileUpload/fileUpload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mail/mail.iml" filepath="$PROJECT_DIR$/mail/mail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restful/restful.iml" filepath="$PROJECT_DIR$/restful/restful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scheduler/scheduler.iml" filepath="$PROJECT_DIR$/scheduler/scheduler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro/shiro.iml" filepath="$PROJECT_DIR$/shiro/shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springBoot-demo.iml" filepath="$PROJECT_DIR$/.idea/springBoot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springDataJpaAndRedis/springDataJpaAndRedis.iml" filepath="$PROJECT_DIR$/springDataJpaAndRedis/springDataJpaAndRedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swagger/swagger.iml" filepath="$PROJECT_DIR$/swagger/swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yml/yml.iml" filepath="$PROJECT_DIR$/yml/yml.iml" />
+    </modules>
+  </component>
+</project>

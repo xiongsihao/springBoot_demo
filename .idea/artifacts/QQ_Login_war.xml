@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="QQ_Login:war">
+    <output-path>$PROJECT_DIR$/QQ_Login/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>QQ_Login</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="QQ_Login-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="QQ_Login:war exploded" />
+    </root>
+  </artifact>
+</component>

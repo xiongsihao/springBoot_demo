@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ授权成功</title>
+</head>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<body>
+    <tbody>
+    头像：
+    <img th:src="${figureurl_qq_2}">
+    <hr>
+    当前时间：<script type="text/javascript">document.write(new Date())</script>
+    <hr>
+    openid：[[${openid}]]
+    <hr>
+    网名：[[${nickname}]]
+    <hr>
+    性别：[[${gender}]]
+    <hr>
+    出生年：1111
+    <hr>
+    ip地址：<script type="text/javascript">document.write(returnCitySN["cip"])</script>
+    <hr>
+    所在地：<script type="text/javascript">document.write(returnCitySN["cname"])</script>
+    <hr>
+    地区编号：<script type="text/javascript">document.write(returnCitySN["cid"])</script>
+    <hr>
+    设备信息：<script type="text/javascript">document.write(navigator.userAgent)</script>
+    <hr>
+</body>
+</html>
