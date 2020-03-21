@@ -20,7 +20,7 @@ import java.util.UUID;
 @Controller
 public class QQController {
 
-    @Value("${qq.oauth.backUrl}")
+    @Value("${qq.oauth.redirect_URI}")
     private String backUrl;
     @Value("${qq.appid}")
     private String APPID;

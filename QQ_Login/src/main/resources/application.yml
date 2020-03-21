@@ -4,6 +4,6 @@ server:
 #此处需修改配置
 qq:
   oauth:
-    backUrl: xxxxxxxxxxxxxxx
+    redirect_URI: xxxxxxxxxxxxxxx
   appid: xxxxxxxxxxx
   appkey: xxxxxxxxxxxxxxx
