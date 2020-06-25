@@ -45,13 +45,19 @@ websocket实现实时在线聊天案例
 
 ![](http://cdn.xiongsihao.com/202006142115_865.png)
 
-详细步骤：http://xiongsihao.com/blog/49
+[详细步骤](http://xiongsihao.com/blog/49)
 
-# 4. fileUpload
+# 4. FreeMarker
+
+[详细步骤](http://xiongsihao.com/blog/50)
+
+springBoot整合FreeMarker，实现页面静态化，代码生成器
+
+# 5. fileUpload
 
 springBoot文件上传案例
 
-# 5. restful
+# 6. restful
 
 restful风格crud
 
@@ -59,27 +65,27 @@ restful风格crud
 
 包含字段：id int，name varchar(20)，money float
 
-# 6. scheduler
+# 7. scheduler
 
 定时器任务，可配置指定时间后执行指定操作
 
-# 7. shiro
+# 8. shiro
 
 springBoot整合apache shiro，一个最基本的权限管理案例；
 
 详细步骤：http://xiongsihao.com/blog/36
 
-# 8. springDataJpaAndRedis
+# 9. springDataJpaAndRedis
 
 springBoot整合JPA和redis
 
-# 9. swagger
+# 10. swagger
 
 一个很好用的接口调试工具，自动生成接口文档
 
-开启服务后访问：http://localhost:8080/swagger-ui.html既可浏览UI界面
+开启服务后访问既可浏览UI界面：http://localhost:8080/swagger-ui.html   
 
-# 10. yml
+# 11. yml
 
 yml文件，注入基本数据和map数据
 
