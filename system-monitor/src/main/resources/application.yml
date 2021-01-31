@@ -1,0 +1,57 @@
+server:
+  port: 8080
+
+# actuator监控
+management:
+  server:
+    # 设置监控服务端口
+    port: 8081
+  endpoint:
+    beans:
+      cache:
+        #配置端点响应缓存
+        time-to-live: 10s
+    health:
+      #配置拥有ENDPOINT_ADMIN权限的用户登录才可以查看健康检测内的details信息
+      show-details: when_authorized
+      roles: ENDPOINT_ADMIN
+  endpoints:
+    # 设置开启默认配置 默认只有shutdown不可用
+    enabled-by-default: true
+    web:
+      # 设置是否暴露端点 默认只有health和info可见
+      exposure:
+        # 包括所有端点
+        include: "*" # 注意需要添加引号
+        # 排除端点
+        exclude: shutdown
+      cors:
+        #允许来自http://localhost:8083的请求访问端点，其它的请求将跨域
+        allowed-origins: http://localhost:8083
+        #允许的请求方式为GET,POST
+        allowed-methods: GET,POST
+  health:
+    status:
+      #定义健康检测的响应状态，ERROR为自定义新加的，其它四个为默认已有的
+      order: ERROR,DOWN,OUT_OF_SERVICE,UP,UNKNOWN
+      http-mapping:
+        #自定义ERROR的状态码为999
+        ERROR: 412
+spring:
+  security:
+    user:
+      name: admin
+      password: 111111
+      roles: ENDPOINT_ADMIN
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=Asia/Shanghai
+    username: root
+    password: 111111
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  boot:
+    admin:
+      client:
+        url: http://localhost:8083

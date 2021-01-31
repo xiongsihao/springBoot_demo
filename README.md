@@ -89,3 +89,7 @@ springBoot整合JPA和redis
 
 yml文件，注入基本数据和map数据
 
+# 12. system-monitor
+应用监控案例，可实时监控应用运行状态、应用信息、内存使用情况等
+system-monitor为监控客户端  system-monitor-admin为监控服务端
+详细步骤：http://xiongsihao.com/blog/52

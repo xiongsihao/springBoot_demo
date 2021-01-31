@@ -1,0 +1,27 @@
+server:
+  port: 8083
+spring:
+  #定义邮件发送人信息
+  mail:
+    host: smtp.163.com
+    port: 465
+    username: xsh_blog@163.com
+    password: G11111111111111
+    default-encoding: utf-8
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+        #开启邮件调试
+        debug: true
+  boot:
+    admin:
+      notify:
+        mail:
+          #发送人
+          from: xsh_blog@163.com
+          #收件人
+          to: xsh2668028614@qq.com
+          #抄送
+          cc: xsh2668028614@qq.com
